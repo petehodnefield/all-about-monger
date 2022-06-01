@@ -1,6 +1,8 @@
 const express = require('express')
+const routes = require('./controllers')
 const sequelize = require('./config/connection')
 const path = require('path')
+const helpers = require('./utils/helpers')
 
 const session = require('express-session')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
@@ -22,6 +24,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(session(sess))
+
+// Turn on routes
+app.use(routes)
 
 // Turn on connection to db and server
 sequelize.sync({force: false}).then(() => {
