@@ -117,13 +117,17 @@ router.delete('/:id', withAuth, (req, res) => {
             }
         }
     )
-    .then(dbUpdatedPostData => {
-        res.json(dbUpdatedPostData)
-    })
-    .catch(err => {
-        console.log(err)
-        res.status(404).json({message: `No post found with this id!`})
-    })
+    .then(dbPostData => {
+        if (!dbPostData) {
+          res.status(404).json({ message: 'No post found with this id' });
+          return;
+        }
+        res.json(dbPostData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 })
 
 module.exports = router

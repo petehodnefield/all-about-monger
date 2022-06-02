@@ -2,6 +2,7 @@ async function deletePost(event) {
     event.preventDefault()
     const split = window.location.pathname.split('/')
     const id = split[split.length - 1]
+    console.log(id)
 
     const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE',

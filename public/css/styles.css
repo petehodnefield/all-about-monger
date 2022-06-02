@@ -6,7 +6,7 @@ body {
     background: url(/images/mhoncho.jpg);
     background-size: cover;
 }
-
+/* HOMEPAGE STYLE */
 /* Header style */
 header {
     text-align: center;
@@ -14,11 +14,22 @@ header {
     color: white;
 }
 
+header a {
+    font-size: 2rem;
+}
+
+.monger {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    background: lightblue;
+    background: #add8e6;
 }
 
 a {
@@ -26,15 +37,17 @@ a {
     color: white;
     text-shadow: 0px 0px 1px black;
 }
-
+.post-list {
+    padding: 0 2rem;
+}
 .post-list li {
     margin-bottom: 1rem;
 }
 .post-list li:nth-child(odd) {
-    background: red;
+    background: #6ac8e8;
 }
 .post-list li:nth-child(even) {
-    background: green;
+    background: #2a87e3;
 }
 .post {
     height: 100%;
@@ -49,4 +62,52 @@ ol {
 
 .title a {
     font-size: 2rem;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+/* HOMEPAGE STYLE END */
+
+/* LOGIN STLYE BEGIN */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: .6rem;
+}
+
+input {
+    padding: .3rem 2rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: .3rem 4rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: salmon;
+}
+
+button:hover {
+    cursor: pointer;
 }
