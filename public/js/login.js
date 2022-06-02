@@ -17,6 +17,7 @@ async function signupFormHandler(event) {
             headers: {'Content-Type': 'application/json'}
         })
         if(response.ok) {
+          alert(`Account created! Please login using your email and password!`)
             console.log(`success`)
         }
         else {

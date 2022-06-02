@@ -24,6 +24,9 @@ header a {
 
 h2 {
     font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
 }
 
 .wrapper {
@@ -61,7 +64,7 @@ ol {
 }
 
 .title a {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 footer {
@@ -110,4 +113,94 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+
+/* SINGLE POST style */
+
+.post {
+    font-size: 2rem;
+}
+
+.post-title a{
+    font-size: 5rem;
+}
+
+.upvote-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.upvote-comment button {
+    margin-bottom: 1rem;
+}
+
+/* CREATE NEW POST STYLE BEGIN */
+.new-post-container, .edit-post-container {
+    width: 100%;
+}
+.edit-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.edit-post-article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.new-post-form {
+    width: 100%;
+}
+ 
+.new-post-form-label {
+    font-size: 2rem;
+}
+
+.new-post-form-input {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    overflow: scroll;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main form {
+    width: 50%;
+}
+
+.comment-form {
+    width: 100%;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.comment {
+    padding: 2rem;
+    background: #f5a698;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.edit-link {
+    background-color: #f5a698;
+    font-size: 2rem;
+    padding: .2rem 3rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    border: 3px solid white;
 }
