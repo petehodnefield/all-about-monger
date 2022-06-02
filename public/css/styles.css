@@ -1,3 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    color: green;
+    background: url(/images/mhoncho.jpg);
+    background-size: cover;
+}
+
+/* Header style */
+header {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
+
+.post-list li {
+    margin-bottom: 1rem;
+}
+.post-list li:nth-child(odd) {
+    background: red;
+}
+.post-list li:nth-child(even) {
+    background: green;
+}
+.post {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+}
+
+ol {
+    list-style-type: none;
+}
+
+.title a {
+    font-size: 2rem;
 }
